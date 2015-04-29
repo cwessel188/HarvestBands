@@ -22,12 +22,7 @@ namespace HarvestBands.Controllers
         // GET: Bands
         public ActionResult Index()
         {
-            // pull each band from the DB
-      //      var bands = from b in _dc.Bands select  new { b.School, b.PaidStatus, b.BandSize, b.PhoneNumber };
-
-
-       //     var briefBands = _repo.Query<Band>().Project().To<BandIndexDTO>();
-
+            
             return View( _bandService.IndexList() );
         }
 
